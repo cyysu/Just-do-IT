@@ -1,0 +1,643 @@
+<!doctype html>
+<html style='font-size:18px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Readme</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignObject { font-size: var(--mermaid-font-zoom); }
+
+
+/* 
+此配置修改的内容如下：
+1、关于一些li ul 标签的颜色，还有行内代码、代码块的颜色等配置
+2、优化了TOC标签的生成样式，增加了一些间距、颜色以及去掉下划线
+3、TOC的目录只会提取二级标题和三级标题
+4、设置一级标题和二级标题的样式一致
+5、设置图片默认为左对齐，最大宽度为50%
+6、设置ul标签的颜色、文字的颜色单独设置
+7、更改系统的字体样式为 Courier New
+*/
+
+/* 全局属性 */
+#write {
+  max-width: 860px;
+  font-size: 20px;
+  color: black;
+  padding: 0 10px;
+  line-height: 1.6;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace, PingFangSC-light, Microsoft YaHei,Optima-Regular,Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* 设置分割线的样式为渐变色 */
+hr {
+ width:100%;
+ margin:0 auto;
+ border: 0;
+ height: 4px;
+ background: #333;
+ background-image: linear-gradient(to right, rgb(9, 201, 235), rgb(217, 9, 224), rgb(45, 230, 122));
+}
+
+/* 设置正文的背景图片以及字体之间的间隔 */
+content {
+  background: url(file:///Users/lyx/Library/Application%20Support/abnerworks.Typora/themes/back1.png);
+  background-repeat: repeat;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 2px;
+
+}
+
+#write {
+  padding-left: 0px; /*adjust writing area position*/
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*段落*/
+#write p {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  line-height: 26px;
+  color: black;
+  font-family: 'Courier New', Courier, monospace, PingFangSC-light, Microsoft YaHei,Optima-Regular,Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*标题*/
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: black;
+}
+
+/* #write h1 {
+  font-size: 2.0rem;
+  color: rgb(224, 58, 150);
+} */
+
+#write h1,h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3rem;
+  border-bottom: 2px solid rgb(71, 108, 217);
+}
+#write h2 span {
+ font-family: 'Courier New', Courier, monospace;
+ display: inline-block;
+ font-weight: bold;
+ background: rgb(71, 108, 217);
+ color: #ffffff;
+ padding: 3px 10px 1px;
+ border-top-right-radius: 3px;
+ border-top-left-radius: 3px;
+ margin-right: 3px;
+}
+
+#write h1 span {
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  font-weight: bold;
+  background: rgb(71, 108, 217);
+  color: #ffffff;
+  padding: 3px 5px 1px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-right: 3px;
+ }
+ 
+
+#write h1:after {
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  content: "";
+  vertical-align: bottom;
+  border-bottom: 36px solid #efebe9;
+  border-right: 20px solid transparent;
+}
+
+#write h2:after {
+ font-family: 'Courier New', Courier, monospace;
+ display: inline-block;
+ content: "";
+ vertical-align: bottom;
+ border-bottom: 36px solid #efebe9;
+ border-right: 20px solid transparent;
+}
+#write h3 {
+
+  display: block;
+  font-size: 1em;
+  overflow: auto;
+  overflow-scrolling: touch;
+  border-left: 5px solid rgb(71, 108, 217);
+  padding: 2px 2px 2px 10px;
+  letter-spacing: 2px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  /* color: #78943a; */
+  text-shadow: 0 -1px 5px rgb(0 0 0 / 40%);
+}
+#write h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+}
+#write h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+}
+#write h6 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+}
+
+
+
+/* toc 不显示横线 这里用了一个小技巧，设置border的颜色为白色 */
+#write .md-toc-item a {
+  text-decoration: none;
+  color:rgb(0, 5, 228);
+  border-bottom: rgb(255, 255, 255);
+}
+
+/* 设置toc中的a标签的上下间距 */
+a.md-toc-inner {
+  margin-top: 8px;
+}
+
+/* 将点击TOC之后 显示目录和一个虚线设置为不显示 */
+.md-toc-content {
+  border: rgb(255, 255, 255);
+  border-color: white !important;
+}
+
+#write div.md-toc-tooltip {
+display:none !important;
+border: none;
+margin-bottom: 0px;
+/* margin-left: 20px; */
+} 
+
+/* 不提取h1 h4 h5 h6的目录 */
+.md-toc-h1,
+.md-toc-h4,
+.md-toc-h5,
+.md-toc-h6 {
+  display: none;
+}
+
+
+
+/* 此段代码用来配置ul标签颜色和文本颜色的区别 */
+ul > li > span
+{
+    font-size: 16px;
+    color: black;
+}
+
+/*列表*/
+#write ul,
+#write ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: black;
+}
+#write ul {
+  list-style-type: circle;
+  color: rgb(235, 8, 148);
+  font-weight: bold;
+}
+#write ul ul {
+  /*
+   list-style-type: none; 
+　 background: url(http://***.gif)no-repeat center left; 
+　 padding-left: 20px /*图片的宽度，若不设置，图标会被文字覆盖
+  */
+  list-style-type: disc;
+  color: rgb(16, 182, 233);
+  font-weight: bold;
+}
+
+#write ul ul ul {
+  list-style-type: square;
+  color: rgb(68, 163, 13);
+  font-weight: bold;
+}
+#write ol {
+  list-style-type: decimal;
+}
+#write li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  text-align: left;
+  color: rgb(1,1,1); /* 只要是纯黑色微信编辑器就会把color这个属性吞掉。。。*/
+  font-weight: 500;
+}
+
+/*引用*/
+#write blockquote {
+  display: block;
+  font-size: 1em;
+  overflow: auto;
+  overflow-scrolling: touch;
+  border-left: 3px solid rgb(71, 108, 217);
+  color: #6a737d;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: rgb(230, 242, 252);
+  letter-spacing: 2px;
+  /* font-weight: bold;  */
+  font-family: 'Courier New';
+
+  
+}
+#write blockquote p {
+  margin: 0px;
+  color: black;
+  line-height: 26px;
+  letter-spacing: 2px;
+  letter-spacing: 2px;
+  font-family: 'Courier New';
+
+}
+
+
+/*链接*/
+#write a {
+  text-decoration: none;
+  word-wrap: break-word;
+  font-weight: bold;
+  border-bottom: 1px solid #1e6bb8;
+  color: rgb(247, 10, 50);
+  border-bottom: 1px solid rgb(239, 112, 96);
+}
+
+/*行内代码*/
+#write p code,
+#write li code {
+  font-size: 16px;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  color:  rgb(55, 7, 133);
+  background-color: rgb(238, 233, 233); 
+  word-break: break-all;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*图片*/
+.img {
+  display: block; 
+  margin: 0 auto;
+  max-width: 50%;
+}
+/* 设置图片左对齐 */
+p .md-image:only-child{
+  width: auto;
+  text-align: left;
+}
+
+/*表格*/
+#write table {
+  display: table;
+  text-align: left;
+}
+#write tbody {
+  border: 0;
+}
+#write table tr {
+  border: 0;
+  border-top: 1px solid rgb(5, 210, 247);
+  background-color: white;
+}
+#write table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+#write table tr th,
+#write table tr td {
+  font-size: 16px;
+  border: 1px solid rgb(39, 231, 245);
+  padding: 5px 10px;
+  text-align: left;
+}
+#write table tr th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* 行内代码 */
+#write span code, #write li code {
+ color: rgb(11, 1, 99);
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: bold;
+}
+
+/* 脚注上标 */
+#write .md-footnote {
+ font-weight: bold;
+ color: rgb(239, 112, 96);
+}
+#write .md-footnote > .md-text:before {
+ content: '['
+}
+#write .md-footnote > .md-text:after {
+ content: ']'
+}
+
+/* 脚注 */
+#write .md-def-name {
+  padding-right: 1.8ch;
+}
+#write .md-def-name:before {
+  content: '[';
+  color: #000;
+}
+#write .md-def-name:after {
+  color: #000;
+}
+
+/* 代码块主题 */
+.md-fences:before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: #f1f1f1;
+  font-weight: bold;
+  margin-bottom: -7px;
+  border-radius: 5px;
+  background-position: 10px 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.cm-s-inner.CodeMirror {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #f1f1f1;
+  color: #9805b6c2;
+  font-weight: bold;
+  font-family: Consolas;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+/*
+.CodeMirror-lines {
+  padding-left: 4px;
+}
+.cm-s-inner .cm-keyword {
+  color: #c792ea;
+}
+.cm-s-inner .cm-operator {
+  color: #89ddff;
+}
+.cm-s-inner .cm-variable-2 {
+  color: #eeffff;
+}
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+  color: #f07178;
+}
+.cm-s-inner .cm-builtin {
+  color: #ffcb6b;
+}
+.cm-s-inner .cm-atom {
+  color: #f78c6c;
+}
+.cm-s-inner .cm-number {
+  color: #ff5370;
+}
+.cm-s-inner .cm-def {
+  color: #82aaff;
+}
+.cm-s-inner .cm-string {
+  color: #c3e88d;
+}
+.cm-s-inner .cm-string-2 {
+  color: #f07178;
+}
+.cm-s-inner .cm-comment {
+  color: #676e95;
+}
+.cm-s-inner .cm-variable {
+  color: #f07178;
+}
+.cm-s-inner .cm-tag {
+  color: #ff5370;
+}
+.cm-s-inner .cm-meta {
+  color: #ffcb6b;
+}
+.cm-s-inner .cm-attribute {
+  color: #c792ea;
+}
+.cm-s-inner .cm-property {
+  color: #c792ea;
+}
+.cm-s-inner .cm-qualifier {
+  color: #decb6b;
+}
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+  color: #decb6b;
+}
+.cm-s-inner .cm-error {
+  color: rgba(255, 255, 255, 1);
+  background-color: #ff5370;
+}
+.cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid rgb(239, 112, 96);
+  z-index: 3;
+}
+*/
+
+ :root {--mermaid-font-zoom:1em ;} 
+</style>
+</head>
+<body class='typora-export'>
+<div id='write'  class=''><p>&nbsp;</p><p><a><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/%E4%B8%BBlogo.png" alt="咖啡屋 主LOGO 800x600" style="zoom:25%;" align="right" /></a></p><p>&nbsp;</p><p>&nbsp;</p><h1><a name="目录" class="md-header-anchor"></a><span>目录</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n5"><a class="md-toc-inner" href="#目录">目录</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n7"><a class="md-toc-inner" href="#1-python是什么">1 Python是什么</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n15"><a class="md-toc-inner" href="#2-python可以干什么">2 Python可以干什么</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n33"><a class="md-toc-inner" href="#3-我用python干了啥">3 我用Python干了啥</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n97"><a class="md-toc-inner" href="#4-python-ide推荐">4 Python IDE推荐</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n110"><a class="md-toc-inner" href="#5-参考文献">5 参考文献</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n145"><a class="md-toc-inner" href="#6-福利">6 福利</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n120"><a class="md-toc-inner" href="#7-联系我">7 联系我</a></span></p></div><h2><a name="1-python是什么" class="md-header-anchor"></a><span>1 Python是什么</span></h2><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/python-basics-wide2.f73a9e9bf9b8.jpg" referrerpolicy="no-referrer" alt="“python”的图片搜索结果"></p><blockquote><p><strong><span>powerful and fast</span></strong></p><p><strong><span>plays well with others</span></strong></p><p><strong><span>runs everywhere</span></strong></p><p><strong><span>friendly &amp; easy to learn</span></strong></p><p><strong><span>Open</span></strong></p></blockquote><h2><a name="2-python可以干什么" class="md-header-anchor"></a><span>2 Python可以干什么</span></h2><ul><li><span>Web开发</span></li><li><span>数据分析</span></li><li><span>机器学习</span></li><li><span>系统管理</span></li><li><span>爬虫</span></li><li><span>软件测试</span></li><li><span>游戏开发</span></li><li><span>嵌入式开发</span></li></ul><h2><a name="3-我用python干了啥" class="md-header-anchor"></a><span>3 我用Python干了啥</span></h2><ul><li><span>微信数据分析</span></li></ul><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png" referrerpolicy="no-referrer" alt="未命名文件"></p><ul><li><span>微信小程序爬虫分析</span></li></ul><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/1_163208_1.png" referrerpolicy="no-referrer" alt="1_163208_1"></p><ul><li><span>WEB开发</span></li></ul><p>&nbsp;</p><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/ac831315289696da84a568a043450af91603776241129.png" referrerpolicy="no-referrer" alt="Django框架简介- 华为云"></p><p>&nbsp;</p><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/mvt.png" referrerpolicy="no-referrer" alt="mvt"></p><blockquote><h3><a name="项目运行步骤" class="md-header-anchor"></a><span>项目运行步骤</span></h3><p><strong><span>pip install -r requirements.txt</span></strong>
+<strong><span>python manage.py makemigrations</span></strong>
+<strong><span>python manage.py migrate</span></strong>
+<strong><span>python manage.py runserver</span></strong></p><h3><a name="创建管理员用户" class="md-header-anchor"></a><span>创建管理员用户</span></h3><p><strong><span>python manage.py createsuperuser</span></strong></p></blockquote><ul><li><p><span>自动化办公</span></p><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/v2-0b5dd60325fd75edeaa1042e5e750aeb_1440w.jpg" referrerpolicy="no-referrer" alt="新课介绍| 用Python自动办公，做职场高手- 知乎"></p><ul><li><span>批量生成图片</span></li><li><span>批量提取视频</span></li><li><span>批量发送工资条</span></li><li><span>批量生成公司合同</span></li></ul></li><li><p><span>嵌入式开发</span></p><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzQ3MTY5NDQ0,size_16,color_FFFFFF,t_70.png" referrerpolicy="no-referrer" alt="在这里插入图片描述"></p><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/tb3_ros2_gazebo_navigation2.png" referrerpolicy="no-referrer" alt="请输入图片描述"></p><ul><li><span>启动仿真环境</span></li></ul><blockquote><p><span>ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py</span></p></blockquote><ul><li><span>启动建图程序</span></li></ul><blockquote><p><span>ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True</span></p></blockquote><ul><li><span>启动控制程序</span></li></ul><blockquote><p><span>ros2 run turtlebot3_teleop teleop_keyboard</span></p></blockquote><ul><li><span>保存地图</span></li></ul><blockquote><p><span>ros2 run nav2_map_server map_saver_cli -f ~/map</span></p></blockquote><ul><li><span>运行导航</span></li></ul><blockquote><p><span>ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml</span></p></blockquote><ul><li><span>其他的嵌入式开发</span></li></ul><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/raspberry-pi-4-labelled-2857741801afdf1cabeaa58325e07b58.png" referrerpolicy="no-referrer" alt="Raspberry Pi 4 Specifications"></p></li><li><p><span>游戏开发（基于pygames的飞机大战）</span></p></li></ul><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/up-2f6727a2389126dc7c809f485b234b924aa.png" referrerpolicy="no-referrer" alt="基于pygame的游戏设计（飞机大战游戏） - iamYing的个人空间- OSCHINA"></p><h2><a name="4-python-ide推荐" class="md-header-anchor"></a><span>4 Python IDE推荐</span></h2><ul><li><span>Anaconda</span></li></ul><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/v2-20754af37dbe94c34f61df06d5391964_180x120.jpg" referrerpolicy="no-referrer" alt="优雅的安装和使用Anaconda - 知乎"></p><ul><li><span>VSCode</span></li></ul><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/visualstudio_code-card.png" referrerpolicy="no-referrer" alt="Microsoft y Canonical, lanzan Visual Studio Code como un paquete snap |  Linux Adictos"></p><ul><li><span>Pycharm</span></li></ul><p><img src="https://xpertlab.com/wp-content/uploads/2020/01/pyCharm.png" referrerpolicy="no-referrer" alt="XpertLab - Website Designing Company Junagadh,Website Development Company  Junagadh, Software Development Company Junagadh, Professional IT Project  Training Junagadh"></p><h2><a name="5-参考文献" class="md-header-anchor"></a><span>5 参考文献</span></h2><ul><li><a href='https://docs.python.org/zh-cn/3/'><span>Python3中文API文档</span></a></li><li><a href='https://www.ncnynl.com/turtlebot3.html'><span>ROS2 Turtlebot3</span></a></li><li><a href='https://github.com/fkromer/awesome-ros2'><span>ROS2 Awesome</span></a></li><li><a href='https://www.ncnynl.com/archives/201809/2579.html'><span>Turtlebot3-ROS2入门教程-目录</span></a></li></ul><h2><a name="6-福利" class="md-header-anchor"></a><span>6 福利</span></h2><p><img src="https://gitee.com/BL_chenyuan/oss/raw/master/uPic/image-202103.png" referrerpolicy="no-referrer" alt="image-20210301140345951"></p><h2><a name="7-联系我" class="md-header-anchor"></a><span>7 联系我</span></h2><pre><b>作者：Kali
+邮箱：cyysu.github.io@gmail.com
+版权：Powered by evgo2017 | © 2021 ❤️【咖啡屋】
+</b></pre><p><span class='md-image'><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gn4nqpogqgj30s20s6wi5.jpg" style="zoom:15%;" align="left" /></span></p><p>&nbsp;</p><p>&nbsp;</p></div>
+</body>
+</html>
